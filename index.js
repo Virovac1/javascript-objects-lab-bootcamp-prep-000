@@ -6,6 +6,8 @@ function updateObjectWithKeyAndValue(object, key, value){
   return Object.assign({},object,{[key]:value })
 }
 
+// not making the target a blank makes the process destructive
 function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
   return Object.assign(object,{[key]:value }) 
 }
+
